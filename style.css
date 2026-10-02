@@ -1,9 +1,12 @@
-/*Martin Guzman lab 5*/
+/*Martin Guzman lab 6*/
 * {
 box-sizing: border-box;
 }
 
 header {
+position: sticky;
+top: 0;
+z-index: 10;
 padding: 24px;
 background-color: #0f4d94;
 color: white;
@@ -55,4 +58,38 @@ margin: 40px auto;
 }
 h1 {
 color: #32a8a6;
+}
+
+.image-wrap{
+    position: relative;
+    display: inline-block;
+}
+
+.badge{
+    position: absolute;
+    top: 8px;
+    right:8px;
+    background-color: #80940f;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    z-index: 5;
+}
+
+@media(max-width:600px){
+    #main-nav{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:900px){
+    #main-nav{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
 }
